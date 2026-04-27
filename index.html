@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Food Festival</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../script.js">
+</head>
+<body>
+
+<header>
+    <h1>Night Food Festival</h1>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#dates">Fechas</a></li>
+            <li><a href="#zones">Zonas</a></li>
+            <li><a href="#gallery">Galería</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Vive la mejor experiencia gastronómica nocturna</h2>
+        <p>Comida, música y cultura en una sola noche</p>
+        <button>Comprar entradas</button>
+    </section>
+
+    <!-- FECHAS -->
+    <section id="dates">
+        <h2>Próximas fechas</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Ciudad</th>
+                    <th>Hora</th>
+                    <th>Evento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>12 Mayo</td>
+                    <td>Barranquilla</td>
+                    <td>6:00 PM</td>
+                    <td>Street Food</td>
+                </tr>
+                <tr>
+                    <td>19 Mayo</td>
+                    <td>Cartagena</td>
+                    <td>7:00 PM</td>
+                    <td>Live Cooking</td>
+                </tr>
+                <tr>
+                    <td>26 Mayo</td>
+                    <td>Santa Marta</td>
+                    <td>5:30 PM</td>
+                    <td>Postres</td>// Seleccionamos el botón hamburguesa
+const toggle = document.getElementById("menu-toggle");
+
+// Seleccionamos el menú
+const menu = document.getElementById("menu");
+
+// Evento al hacer click
+toggle.addEventListener("click", () => {
+    // Agrega o quita la clase "active"
+    menu.classList.toggle("active");
+});
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="about">
+        <h2>Sobre el festival</h2>
+        <p>
+            Este festival reúne lo mejor de la comida urbana con experiencias culturales únicas.
+        </p>
+
+        <ul>
+            <li>Comida internacional</li>
+            <li>Música en vivo</li>
+            <li>Ambiente familiar</li>
+            <li>Shows en vivo</li>
+        </ul>
+    </section>
+
+    <!-- ZONAS -->
+    <section id="zones" class="zones">
+        <h2>Zonas gastronómicas</h2>
+
+        <article class="card">
+            <h3>Zona Caribe</h3>
+            <p>Sabores típicos de la costa.</p>
+        </article>
+
+        <article class="card">
+            <h3>Zona Internacional</h3>
+            <p>Comida de todo el mundo.</p>
+        </article>
+
+        <article class="card">
+            <h3>Zona Dulce</h3>
+            <p>Postres y bebidas.</p>
+        </article>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="gallery" class="gallery">
+        <h2>Galería</h2>
+        <img src="https://picsum.photos/300" alt="">
+        <img src="https://picsum.photos/301" alt="">
+        <img src="https://picsum.photos/302" alt="">
+        <img src="https://picsum.photos/303" alt="">
+    </section>
